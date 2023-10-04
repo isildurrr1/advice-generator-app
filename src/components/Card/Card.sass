@@ -1,0 +1,55 @@
+.card
+  background-color: hsl(217, 19%, 24%)
+  margin: auto
+  border-radius: 15px
+  position: relative
+
+.card__container
+  min-width: 442px
+  min-height: 202px
+  border-bottom: 1px solid hsl(217, 19%, 38%)
+  margin: 50px 48px 80px 48px
+  position: relative
+
+.card__title
+  margin: 0
+  text-align: center
+  color: hsl(150, 100%, 66%)
+  font-size: 13px
+  font-style: normal
+  letter-spacing: 4.1px
+
+.card__text
+  text-align: center
+  width: 440px
+  margin: 28px auto
+  font-size: 27.5px
+  line-height: 37px
+  color: hsl(193, 38%, 86%)
+
+.card__button
+  position: absolute
+  bottom: -30px
+  left: 238px
+  cursor: pointer
+  width: 62px
+  height: 62px
+  border-radius: 50%
+  border: none
+  background: url('../../images/icon-dice.svg') no-repeat center hsl(150, 100%, 66%)
+  pointer-events: auto
+  transition: transform 0.3s
+  z-index: 3
+  // box-shadow: 0 5px 10px $gradient-bg-bottom
+  &:active
+    transform: scale(0.9)
+  &:disabled
+    transform: scale(0)
+
+.card__pattern
+  position: absolute
+  left: 196px
+  bottom: -25px
+  width: 50px
+  height: 50px
+  background: url('../../images/pattern-divider-desktop.svg') no-repeat center hsl(217, 19%, 24%)
