@@ -10,10 +10,11 @@ interface CardProps {
   advice: Advice,
   getAnAdvice: boolean,
   setGetAnAdvice: Dispatch<SetStateAction<boolean>>
+  loading: boolean
 }
 
 
-const Card: React.FC<CardProps> = ({advice, getAnAdvice, setGetAnAdvice}) => {
+const Card: React.FC<CardProps> = ({ advice, getAnAdvice, setGetAnAdvice, loading }) => {
   const onBtnClick = () => {
     setGetAnAdvice(!getAnAdvice)
   }
@@ -26,7 +27,7 @@ const Card: React.FC<CardProps> = ({advice, getAnAdvice, setGetAnAdvice}) => {
         </p>
         <div className="card__pattern"></div>
       </div>
-      <button className='neon-btn card__button' onClick={onBtnClick} ></button>
+      <button className='card__button' onClick={onBtnClick} disabled={loading}></button>
     </section>
   )
 }

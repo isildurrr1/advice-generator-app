@@ -38,20 +38,16 @@
   border: none
   background: url('../../images/icon-dice.svg') no-repeat center hsl(150, 100%, 66%)
   pointer-events: auto
-  transition: transform 0.3s
+  transition: transform 0.3s, box-shadow 0.3s
   z-index: 3
-  // box-shadow: 0 5px 10px $gradient-bg-bottom
   &:active
     transform: scale(0.9)
+  &:hover
+    transition: 0.3s
+    background-color: hsl(150, 100%, 66%)
+    box-shadow: 0px 0px 15px 2px hsl(150, 100%, 66%)
   &:disabled
     visibility: hidden
-
-.neon-btn
-  transition: 0.3s
-
-.neon-btn:hover 
-  background-color: hsl(150, 100%, 66%)
-  box-shadow: 0px 0px 15px 2px hsl(150, 100%, 66%)
 
 .card__pattern
   position: absolute
@@ -60,3 +56,26 @@
   width: 50px
   height: 50px
   background: url('../../images/pattern-divider-desktop.svg') no-repeat center hsl(217, 19%, 24%)
+
+@media screen and (max-width: 600px)
+  .card
+    border-radius: 10px
+  .card__container
+    min-width: 300px
+    min-height: 100px
+    margin: 38px 20px 70px 20px
+    position: relative
+  .card__title
+    font-size: 12px
+    letter-spacing: 3px
+  .card__text
+    width: 290px
+    margin: 24px auto 31px auto
+    font-size: 23px
+    line-height: 33px
+  .card__button
+    left: 138px
+    bottom: -33px
+  .card__pattern
+    left: 125px
+    bottom: -25px
