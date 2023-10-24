@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({advice, getAnAdvice, setGetAnAdvice}) => {
         </p>
         <div className="card__pattern"></div>
       </div>
-      <button className='card__button' onClick={onBtnClick} ></button>
+      <button className='neon-btn card__button' onClick={onBtnClick} ></button>
     </section>
   )
 }
