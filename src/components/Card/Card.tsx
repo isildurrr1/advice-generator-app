@@ -27,7 +27,7 @@ const Card: React.FC<CardProps> = ({ advice, getAnAdvice, setGetAnAdvice, loadin
         </p>
         <div className="card__pattern"></div>
       </div>
-      <button className='card__button' onClick={onBtnClick} disabled={loading}></button>
+      <button className='card__button' onClick={onBtnClick} disabled={loading}/>
     </section>
   )
 }

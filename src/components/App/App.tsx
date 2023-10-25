@@ -19,9 +19,9 @@ const App = () => {
     setLoading(false)
   }, [getAnAdvice])
   return (
-    <div className="App">
+    <main className="App">
       <Card advice={advice} getAnAdvice={getAnAdvice} setGetAnAdvice={setGetAnAdvice} loading={loading} />
-    </div>
+    </main>
   );
 }
 
